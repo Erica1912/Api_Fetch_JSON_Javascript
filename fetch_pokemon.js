@@ -13,7 +13,8 @@ fetch(url)
       if (i % 5 === 0) {
         crearDiv += `</div><div class = "principal">`;
       }
-      crearDiv += `<div class="element"> <p>${objeto[i].name}      <a href="${objeto[i].url}">Page Pokemon</a></p>  </div> `;
+      let namePok =objeto[i].name
+      crearDiv += `<div class="element"><p><a href="${objeto[i].url}">${namePok.toUpperCase()}</a></p>  </div> `;
       console.log(i);
     }
     
